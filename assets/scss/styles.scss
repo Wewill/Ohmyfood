@@ -1,0 +1,9 @@
+/* Imports */
+@import "vendors/reset.scss";
+@import "layout/variables.scss";
+@import "layout/general.scss";
+
+/* Styles */
+body {
+    background-color: var(--var);
+}
