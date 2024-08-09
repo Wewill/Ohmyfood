@@ -1,0 +1,23 @@
+footer {
+    background-color: #353535;
+    padding: 25px;
+    color: white;
+
+    .footer-logo {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    ul {
+      list-style-type: none;
+  
+      li {
+        padding: 5px 0 5px 0;
+  
+        a { color: white; text-decoration: none;}
+
+        i { margin-right: .6rem; &.fa-hands-helping { margin-right: .2rem; }}
+      }
+    }
+}

@@ -1,9 +1,10 @@
 /* Imports */
 @import "vendors/reset.scss";
+
 @import "layout/variables.scss";
+@import "animations/animations.scss";
 @import "layout/general.scss";
 
-/* Styles */
-body {
-    background-color: var(--var);
-}
+@import "components/header.scss";
+@import "components/footer.scss";
+@import "components/loader.scss";

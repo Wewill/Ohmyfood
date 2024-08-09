@@ -1,3 +1,7 @@
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-family, sans-serif;
+}
+
+body {
+    background-color: var(--var);
 }
