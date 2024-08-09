@@ -3,8 +3,15 @@
 
 @import "layout/variables.scss";
 @import "animations/animations.scss";
+@import "layout/typography.scss";
+@import "layout/mixins.scss";
 @import "layout/general.scss";
 
 @import "components/header.scss";
+@import "components/local.scss";
+@import "components/hero.scss";
+@import "components/help.scss";
+@import "components/cards.scss";
+@import "components/menus.scss";
 @import "components/footer.scss";
 @import "components/loader.scss";

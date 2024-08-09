@@ -3,12 +3,27 @@ $font-size:             1rem;
 $font-family:           "Roboto";
 $font-alt-family:       "Shrikhand";
 
+$first-color:           #99E2D0;
+$second-color:          #008766;
+$third-color:           #89C8FA;
+$fourth-color:          #003A68;
+$fith-color:            #9356DC;
+$sixth-color:           #FF79DA;
+
+$lightgrey:             #7e7e7e;
+
 /* Css variables */
 :root {
-    --first-color:#99E2D0;
-    --second-color:#008766;
-    --third-color:#89C8FA;
-    --fourth-color:#003A68;
-    --fith-color:#9356DC;
-    --sixth-color:#FF79DA;
+    --first-color:$first-color;
+    --second-color:$second-color;
+    --third-color:$third-color;
+    --fourth-color:$fourth-color;
+    --fith-color:$fith-color;
+    --sixth-color:$sixth-color;
 }
+
+$breakpoints: (
+        tablet: 768px,
+        desktop: 1280px,
+        large: 1600px,
+);
