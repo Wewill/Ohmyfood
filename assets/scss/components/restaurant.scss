@@ -1,0 +1,34 @@
+.restaurants {
+    padding: 2rem;
+    background-color: var(--section-color);
+}
+
+.restaurant {
+    background-color: var(--section-color);
+    border-top-left-radius: var(--border-raduis-xl);
+    border-top-right-radius: var(--border-raduis-xl);
+    width: 100%;
+    position: relative;
+    max-width: 1055px;
+    margin: auto;
+    margin-top: calc( -1 * var(--border-raduis-xl) * 2 );
+    padding: 1rem;
+
+
+    .restaurant-header {
+        padding: 2rem;
+    }
+
+    .restaurant-order {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+
+        .order-btn {
+            @include button(primary);
+            display: inline-block;  
+        }
+
+    }
+}

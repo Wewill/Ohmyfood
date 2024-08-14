@@ -1,7 +1,14 @@
 .hero {
-    padding: 2rem;
     text-align: center;
-    background-color: rgb(250, 250, 250);
+    background-color: var(--section-color);
+    margin-bottom: 2rem;
+
+    hgroup {
+        padding: 2rem;
+        .hero-subtitle {
+            margin-bottom: 0;
+        }        
+    }
   
     .hero-title {
       margin: 0;
@@ -14,5 +21,13 @@
   
     .hero-btn {
       @include button(primary);
+      margin-bottom: 2rem;
+      display: inline-block;
+    }
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 350px;
     }
   }

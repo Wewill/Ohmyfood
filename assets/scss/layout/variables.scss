@@ -14,12 +14,21 @@ $lightgrey:             #7e7e7e;
 
 /* Css variables */
 :root {
-    --first-color:$first-color;
-    --second-color:$second-color;
-    --third-color:$third-color;
-    --fourth-color:$fourth-color;
-    --fith-color:$fith-color;
-    --sixth-color:$sixth-color;
+    --bg-color:white;
+
+    --first-color:           #99E2D0;
+    --second-color:          #008766;
+    --third-color:           #89C8FA;
+    --fourth-color:          #003A68;
+    --fith-color:            #9356DC;
+    --sixth-color:           #FF79DA;
+
+    --section-color:         #fafafa;
+
+    --border-raduis-sm: 5px;
+    --border-raduis-md: 10px;
+    --border-raduis-lg: 15px;
+    --border-raduis-xl: 25px;
 }
 
 $breakpoints: (
