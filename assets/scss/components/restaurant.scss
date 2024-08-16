@@ -1,6 +1,11 @@
 .restaurants {
     padding: 2rem;
     background-color: var(--section-color);
+
+    @media screen and (max-width:map-get($breakpoints, large)){
+        padding: 2rem 1rem;
+    }
+
 }
 
 .restaurant {
@@ -17,6 +22,18 @@
 
     .restaurant-header {
         padding: 2rem;
+
+        @media screen and (max-width:map-get($breakpoints, desktop)){
+            padding: 2rem 0;
+        }        
+    }
+
+    .restaurant-title {
+        text-align: center;
+
+        @media screen and (max-width:map-get($breakpoints, desktop)){
+            text-align: left;
+        }
     }
 
     .restaurant-order {

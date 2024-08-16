@@ -7,10 +7,12 @@ footer {
       font-size: 1.2rem;
       font-weight: 500;
       margin-bottom: 0.5rem;
+      order: 1;
     }
 
     ul {
       list-style-type: none;
+      order: 2;
   
       li {
         padding: 5px 0 5px 0;
@@ -20,4 +22,26 @@ footer {
         i { margin-right: .6rem; &.fa-hands-helping { margin-right: .2rem; }}
       }
     }
+
+    @media screen and (min-width:map-get($breakpoints, large)){
+        display: flex;
+        justify-content: end;
+
+        .footer-logo  {
+            order: 2;
+        }
+
+        ul {
+            order: 1;
+        }
+
+        ul li {
+            display: inline-block;
+            margin-right: 1rem;
+        }
+
+    }
+
+
 }
+

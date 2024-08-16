@@ -7,6 +7,16 @@
     margin: 2rem 0;
     position: relative;
 
+    @media screen and (max-width:map-get($breakpoints, desktop)){
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width:map-get($breakpoints, mobile)){
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
     &.cards-nogrid {
         display: block;
  
@@ -20,6 +30,17 @@
         border-radius: var(--border-raduis-lg);
         filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
         display: flex;
+
+        /* Animation */
+        opacity: 0;
+        animation: cardAppear 0.75s ease-out;
+        animation-fill-mode: both;
+    
+        @for $i from 0 to 99 {
+            &:nth-child(#{$i}) {
+              animation-delay:  #{($i/10) + 1.75}s;
+            }
+        }
 
         &.card-stack {
             flex-direction: column;
@@ -56,36 +77,95 @@
             align-items: center;
             box-sizing: border-box;
 
+            overflow: hidden;
+            position: relative;
+            border-radius: var(--border-raduis-lg);
+
             .card-title {
                 font-size: 1rem;
                 font-weight: 700;
                 margin-top: 0.625rem;
                 margin-bottom: 0.25rem;
+                text-overflow:ellipsis;
+                overflow-wrap: break-word;
+                white-space: nowrap
             }
 
             .card-subtitle {
                 font-size: .9rem;
                 font-weight: 300;
                 margin: 0.4rem 0;
+                text-overflow:ellipsis;
+                overflow-wrap: break-word;
+                white-space: nowrap
             }
 
             .card-infos {
                 padding-right: 1rem;
+
+                i.fa-heart {
+                    color: black;
+                    transition: color 300ms ease-in-out;
+                }
+
             }
         }
 
+        &:hover .card-infos i.fa-heart { 
+            font-weight: 900;
+            color: var(--fith-color);
+        }
+
         .card-badge {
-            color: #008766;
-            background-color: var(--fith-color);
-            border: 5px solid var(--fith-color);
+            color: var(--second-color);
+            background-color: var(--first-color);
+            border: 5px solid var(--first-color);
             border-radius: 5px;
             position: absolute;
             right: 3%;
             top: 5%;
             z-index: 99;
         }
+
+        .card-hover {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--first-color);
+            width: 50px;
+            height: 100%;
+            border-top-right-radius: var(--border-raduis-lg);
+            border-bottom-right-radius: var(--border-raduis-lg);
+            position: absolute;
+            padding: 20px;
+            right: -51px;
+            top: 0;
+            transition: right 330ms ease-in-out;
+            
+            i {
+                color: #fff;
+                transition: transform 330ms ease-in-out;
+            }
+
+        }
+
+        &:hover .card-hover{
+            right: 0px;
+        }
+        &:hover .card-hover i {
+            transform: rotate(360deg);
+        }
+
+
+        transform: scale(100%);
+        transition: transform 0.4s;
+
+        &:hover {
+            transform: scale(105%);
+        }
         
 
     }
 
 }
+

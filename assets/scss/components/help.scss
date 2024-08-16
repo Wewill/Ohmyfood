@@ -1,6 +1,10 @@
 section.help {
         counter-reset: steps;
         margin-bottom: 2rem;
+
+        @media screen and (max-width:map-get($breakpoints, large)){
+            padding: 0 2rem;
+        }
         
         ol {
           display: flex;
@@ -35,6 +39,7 @@ section.help {
             flex-grow: 1;
             border-radius: 1rem;
             @include box-shadow;
+            transition: transform 300ms ease-in-out;
 
             &:hover {
               @include transform-zoom;
