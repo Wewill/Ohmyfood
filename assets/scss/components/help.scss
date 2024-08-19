@@ -10,7 +10,7 @@ section.help {
           display: flex;
           gap: 2rem;
 
-          @media screen and (max-width:map-get($breakpoints, large)){
+          @media screen and (max-width:map-get($breakpoints, tablet)){
             flex-direction: column;
           }
 
