@@ -88,7 +88,8 @@
                 margin-bottom: 0.25rem;
                 text-overflow:ellipsis;
                 overflow-wrap: break-word;
-                white-space: nowrap
+                white-space: nowrap;
+                overflow: hidden;
             }
 
             .card-subtitle {
@@ -97,7 +98,13 @@
                 margin: 0.4rem 0;
                 text-overflow:ellipsis;
                 overflow-wrap: break-word;
-                white-space: nowrap
+                white-space: nowrap;
+                overflow: hidden;
+            }
+
+            .card-txt {
+                flex-grow: 1;
+                overflow: hidden;
             }
 
             .card-infos {
