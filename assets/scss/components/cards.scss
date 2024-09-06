@@ -108,19 +108,43 @@
             }
 
             .card-infos {
-                padding-right: 1rem;
+                padding: 1rem;
+                position: relative;
+
+                // i.fa-heart {
+                //     color: black;
+                //     transition: color 300ms ease-in-out;
+                // }
 
                 i.fa-heart {
+                    font-weight: 500;
                     color: black;
-                    transition: color 300ms ease-in-out;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    // transition: color 300ms ease-in-out;
+                }
+            
+                i.filled {
+                    font-weight: 900;
+                    color: var(--fith-color);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: .0;
+                    transition: opacity 200ms ease-in-out;
                 }
 
             }
         }
 
+        // &:hover .card-infos i.fa-heart { 
+        //     //font-weight: 900;
+        //     color: var(--fith-color);
+        // }
+
         &:hover .card-infos i.fa-heart { 
-            font-weight: 900;
-            color: var(--fith-color);
+            opacity: 1;
         }
 
         .card-badge {
@@ -143,11 +167,12 @@
             height: 100%;
             border-top-right-radius: var(--border-raduis-lg);
             border-bottom-right-radius: var(--border-raduis-lg);
-            position: absolute;
+            // position: absolute;
             padding: 20px;
-            right: -51px;
-            top: 0;
-            transition: right 330ms ease-in-out;
+            // right: -51px;
+            // top: 0;
+            margin-right: -51px;
+            transition: margin-right 330ms ease-in-out;
 
             cursor: pointer;
             
@@ -159,7 +184,8 @@
         }
 
         &:hover .card-hover{
-            right: 0px;
+            // right: 0;
+            margin-right: 0px;
         }
         &:hover .card-hover i {
             transform: rotate(360deg);

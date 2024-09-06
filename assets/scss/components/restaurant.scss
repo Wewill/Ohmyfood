@@ -66,3 +66,37 @@
     }
     
 }
+
+// Heart 
+.animate-heart {
+    position: relative;
+
+    i.fa-heart {
+        font-weight: 500;
+        color: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        // transition: color 300ms ease-in-out;
+    }
+
+    i.filled {
+        font-weight: 900;
+        color: var(--fith-color);
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: .0;
+        transition: opacity 200ms ease-in-out;
+    }
+
+    // &:hover i.fa-heart { 
+    //     font-weight: 900;
+    //     color: var(--fith-color);
+    // }
+    
+    &:hover i.filled { 
+        opacity: 1;
+    }
+}
+

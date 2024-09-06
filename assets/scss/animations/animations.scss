@@ -1,34 +1,34 @@
 @keyframes hide {
-    50% {
-        opacity: 0;
-        z-index: 999;
-    }
-    100% {
+  50% {
       opacity: 0;
-      z-index: -999;
-    }
-  } 
+      z-index: 999;
+  }
+  100% {
+    opacity: 0;
+    z-index: -999;
+  }
+} 
   
-  @keyframes jump {
-    0% {
-      transform: translateY(0);
-    }
-    25% {
-      transform: translateY(0.5rem);
-    }
-    75% {
-      transform: translateY(-0.5rem);
-    }
-    100% {
-      transform: translateY(0);
-    }
+@keyframes jump {
+  0% {
+    transform: translateY(0);
   }
+  25% {
+    transform: translateY(0.5rem);
+  }
+  75% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
-  @keyframes cardAppear {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+@keyframes cardAppear {
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
+}
