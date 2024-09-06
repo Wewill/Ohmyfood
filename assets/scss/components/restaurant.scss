@@ -1,3 +1,4 @@
+// Restaurants
 .restaurants {
     padding: 2rem;
     background-color: var(--section-color);
@@ -8,6 +9,7 @@
 
 }
 
+// Restaurant
 .restaurant {
     background-color: var(--section-color);
     border-top-left-radius: var(--border-raduis-xl);
@@ -48,4 +50,19 @@
         }
 
     }
+}
+
+// Menus
+.menu {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (max-width:map-get($breakpoints, desktop)){
+        width: 100%;
+    }
+
+    .meal {
+    }
+    
 }
